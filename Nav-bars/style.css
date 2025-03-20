@@ -1,0 +1,108 @@
+.nav-1{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border: 2px rgba(38, 109, 133, 0.445);
+    margin: 5% 0;
+    background-color: grey;
+    height: 4rem;
+    box-shadow: 0 2px 6px black;
+}
+
+.list {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+ul li{
+    padding: 1rem;
+    color: rgba(219, 219, 219, 0.884);
+    font-size: larger;
+}
+
+.logo h1{
+    color:white;
+    font-weight: 500;
+
+}
+
+
+.btn button{
+    font-size: medium;
+    font-weight: 500;
+    color: white;
+    height: 1.8rem;
+    width: 5rem;
+    background-color: lightblue;
+    border-radius: 15px;
+    border: 0;
+}
+
+.nav-2{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 2px rgba(38, 109, 133, 0.445);
+    margin: 5% 0;
+    background-color: grey;
+    height: 4rem;
+    box-shadow: 0 2px 6px black;
+}
+
+ .nav-2 .btn{
+    order: 2;
+ }
+
+.start{
+    margin-left: 7%;
+    display:flex;
+    justify-content: start;
+    align-items: center;  
+}
+
+.nav-2 .logo{
+    margin-right: 12%;
+}
+
+.nav-3{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 2px rgba(38, 109, 133, 0.445);
+    margin: 5% 0;
+    background-color: grey;
+    height: 4rem;
+    box-shadow: 0 2px 6px black;
+}
+
+.nav-3 .end{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 12%;
+
+}
+
+.nav-3 .logo{
+    margin-left: 11%;
+}
+
+.container{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+body{
+    background-color: rgb(245, 245, 245);
+}
+
+
+
+
+
+
+
+

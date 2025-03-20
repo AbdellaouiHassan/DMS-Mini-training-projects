@@ -1,0 +1,150 @@
+
+.big-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #F4F9FA;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.sec-1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 1rem;
+    width: 50vh;
+}
+
+.sec-1 .input{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 0.5rem;
+    border: 0;
+    background-color: #cdd2d4;
+    height: 2.5rem;
+    width: 50vh;
+}
+
+.sec-1 .input p{
+    padding: 0.5rem;
+}
+
+.sec-1 .input img{
+    padding: 0.5rem;
+}
+
+.sec-2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 1rem;
+    background-color: #00494D;
+    border-radius: 1rem;
+    width: 45vh;
+}
+
+.sec-1 .tip{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 3rem 3rem;
+    grid-gap: 1rem;
+}
+
+.tip-btn{
+    cursor: pointer;
+    background-color: #26C0AB;
+    border: 0;
+    border-radius: 0.5rem;
+    font-size: larger;
+    font-weight: 500;
+    transform: 1s;
+}
+
+.tip-btn:hover{
+    background-color: #20887a;
+    scale: 1.1;
+}
+
+.tip #custom{
+    border: 0;
+    background-color: lightgray;
+    border-radius: 0.5rem;
+    font-size: larger;
+    font-weight: 500;
+    transform: 1s;
+    cursor: pointer;
+}
+
+.tip #custom:hover{
+    background-color: rgb(216, 213, 213) ;
+    scale: 1.1;
+
+}
+
+
+.sec-2 .tip-amount{
+    display: flex;
+    justify-content: space-around;
+
+}
+
+.sec-2 .total{
+    display: flex;
+    justify-content: space-around;
+}
+
+.reset-btn{
+    display: grid;
+    grid-template-columns: 2rem 1fr 2rem;
+    grid-template-rows: 2.5rem;
+}
+
+.reset-btn button{
+    cursor: pointer;
+    grid-column-start: 2;
+    background-color: #0D686D;
+    border: 0;  
+    font-size: larger;
+    font-weight: 600;
+    color: #9bc3c7;
+    transform: 1s;
+}
+.reset-btn button:hover{
+    background-color: #26797e;
+    scale: 1.1;
+}
+
+.to-pay{
+    font-size: 3rem;
+    color: #26C0AB;
+    scale: 1.1;
+}
+
+.text{
+    color: #9bc3c7;
+    font-size: larger;
+    font-weight: 500;
+}
+
+.sec-1 h3{
+    font-size: larger;
+    font-weight: 700;
+}
+
+.sec-1 p{
+    font-size: larger;
+    font-weight: 600;
+}
+
+
+
+
+
+
+

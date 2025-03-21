@@ -1,9 +1,13 @@
+body{
+    background-color: #eee;
+}
 .nav-1{
     display: grid;
     grid-template-columns: 33% 33% 33%;
-    grid-template-rows: 5rem;
+    grid-template-rows: 4rem;
     background-color: blueviolet;
     margin: 7rem 0;
+    box-shadow: 0 2px 6px black
 }
 
 .nav-1 .logo{
@@ -13,8 +17,9 @@
 }
 
 .nav-1 .list{
-    justify-items: center;
-    align-content: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .nav-1 .btn{
@@ -48,32 +53,55 @@ ul li{
 
 .nav-2{
     display: grid;
-    grid-template-columns: repeat(5, 20%);
-    grid-template-rows: 5rem;
+    grid-template-columns: 7.5rem 1fr 1fr 1fr 1fr 4rem ;
+    grid-template-rows: 4rem;
     background-color: blueviolet;
+    box-shadow: 0 2px 6px black;
     margin: 7rem 0;
 }
     
 
-
 .nav-2 .start{
     display: flex;
-    justify-content: center;
     align-items: center;
-}
-
-.nav-2 .start{
-    grid-column-start: 1;
+    grid-column-start: 2;
     grid-column-end: 3;
-    justify-items: start;
-    align-content: center;
 }
 
 .nav-2 .logo{
-    grid-column-start: 4;
-    grid-column-end: 5;
-    align-content: center;
+    display: flex;
+    align-items: center;
+    color: white;
+    grid-column-start: 5;
+    grid-column-end: 6;
 }
 
+.nav-3{
+    display: grid;
+    grid-template-columns: 11rem 1fr 1fr 1fr 1fr 18rem ;
+    grid-template-rows: 4rem;
+    background-color: blueviolet;
+    box-shadow: 0 2px 6px black;
+    margin: 7rem 0;
+}
 
+.nav-3 .end{
+    display: flex;
+    align-items: center;
+    grid-column-start: 5;
+    grid-column-end: 6;
+}
 
+.nav-3 .logo{
+    display: flex;
+    align-items: center;
+    color: white;
+    grid-column-start: 2;
+    grid-column-end: 3;
+} 
+
+.nav-3 .btn{
+    display: flex;
+    align-items: center;
+}
+    

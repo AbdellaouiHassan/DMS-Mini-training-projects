@@ -1,10 +1,10 @@
-
 .big-container{
     display: flex;
     align-items: center;
     justify-content: center;
     height: 100vh;
     background-color: #F4F9FA;
+    font-family: 'Space Mono', monospace;
 }
 
 .container{
@@ -18,6 +18,7 @@
     justify-content: center;
     padding: 1rem;
     width: 50vh;
+    font-family: 'Space Mono', monospace;
 }
 
 .sec-1 .input{
@@ -27,7 +28,7 @@
     border-radius: 0.5rem;
     border: 0;
     background-color: #cdd2d4;
-    height: 2.5rem;
+    height: 2.8rem;
     width: 50vh;
 }
 
@@ -47,6 +48,7 @@
     background-color: #00494D;
     border-radius: 1rem;
     width: 45vh;
+    font-family: 'Space Mono', monospace;
 }
 
 .sec-1 .tip{
@@ -56,28 +58,32 @@
     grid-gap: 1rem;
 }
 
-.tip-btn{
+.tip-btn {
+    font-family: 'Space Mono', monospace;
     cursor: pointer;
-    background-color: #26C0AB;
+    color: whitesmoke;
+    background-color: #00494D;
     border: 0;
     border-radius: 0.5rem;
     font-size: larger;
-    font-weight: 500;
-    transform: 1s;
+    font-weight: 550;
+    transform: 1.5s;
 }
 
 .tip-btn:hover{
-    background-color: #20887a;
+    background-color: #04767c;
     scale: 1.1;
 }
 
 .tip #custom{
     border: 0;
+    font-family: 'Space Mono', monospace;
+    color: gray;
     background-color: lightgray;
     border-radius: 0.5rem;
     font-size: larger;
-    font-weight: 500;
-    transform: 1s;
+    font-weight: 550;
+    transform: 1.5s;
     cursor: pointer;
 }
 
@@ -103,6 +109,7 @@
     display: grid;
     grid-template-columns: 2rem 1fr 2rem;
     grid-template-rows: 2.5rem;
+    font-family: 'Space Mono', monospace;
 }
 
 .reset-btn button{
@@ -113,7 +120,7 @@
     font-size: larger;
     font-weight: 600;
     color: #9bc3c7;
-    transform: 1s;
+    transform: 1.5s;
 }
 .reset-btn button:hover{
     background-color: #26797e;

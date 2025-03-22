@@ -21,34 +21,63 @@
     font-family: 'Space Mono', monospace;
 }
 
-.sec-1 .input{
+.sec-1 h3{
+    font-size: larger;
+    font-weight: 700;
+}
+
+.sec-1 p{
+    font-size: larger;
+    font-weight: 600;
+}
+
+.sec-1 .input-box{
     display: flex;
-    justify-content: space-between;
     align-items: center;
+    width: 100%;
+    height: 2.8rem;
+    position: relative;
+}
+
+.sec-1 .input-box input{
+    width: 100%;
+    height: 100%;
     border-radius: 0.5rem;
     border: 0;
+    color: rgb(87, 84, 84);
     background-color: #cdd2d4;
-    height: 2.8rem;
-    width: 50vh;
-}
-
-.sec-1 .input p{
-    padding: 0.5rem;
-}
-
-.sec-1 .input img{
-    padding: 0.5rem;
-}
-
-.sec-2{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding: 1rem;
-    background-color: #00494D;
-    border-radius: 1rem;
-    width: 45vh;
+    text-align: right;
+    padding-right:  0.6rem  ;
+    padding-left: 2rem;
     font-family: 'Space Mono', monospace;
+    font-weight: 600;
+    font-size: 2rem;
+    outline: none;
+}
+
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.sec-1 .input-box input:hover{
+    background-color: #c0c5c7;
+}
+
+.sec-1 .input-box input:hover:focus{
+    outline: none;
+    border: 2px solid #6d6969;
+}
+
+ .input-box .start{
+    font-size: 2rem;
+    color: gray;
+    position: absolute;
+    left: 0.6rem;
+}
+
+#icon{
+    scale: 1.2;
 }
 
 .sec-1 .tip{
@@ -64,7 +93,7 @@
     color: whitesmoke;
     background-color: #00494D;
     border: 0;
-    border-radius: 0.5rem;
+    border-radius: 0.3rem;
     font-size: larger;
     font-weight: 550;
     transform: 1.5s;
@@ -93,6 +122,16 @@
 
 }
 
+.sec-2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 1rem;
+    background-color: #00494D;
+    border-radius: 1rem;
+    width: 45vh;
+    font-family: 'Space Mono', monospace;
+}
 
 .sec-2 .tip-amount{
     display: flex;
@@ -138,18 +177,6 @@
     font-size: larger;
     font-weight: 500;
 }
-
-.sec-1 h3{
-    font-size: larger;
-    font-weight: 700;
-}
-
-.sec-1 p{
-    font-size: larger;
-    font-weight: 600;
-}
-
-
 
 
 

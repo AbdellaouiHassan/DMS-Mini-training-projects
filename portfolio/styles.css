@@ -3,12 +3,13 @@
     color: #03045E;
 }
 .nav-bar{
-    background-color: lightyellow;
+    background-color: #F5EE84;
     height: 8vh;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 0 15vh;
+    margin-top: 1rem;
 }
 
 
@@ -71,10 +72,12 @@
     background-color: hsl(239, 100%, 30%);
 }
 
-.hero{
+#hero{
     display: flex;
     justify-content: space-between;
-    padding: 15vh;
+    padding-left: 15vh;
+    padding-top: 15vh;
+    padding-right: 15vh;
     background-color:lightyellow;
 }
 
@@ -103,16 +106,16 @@
     font-weight: 540;
     font-size: 4vh;
 }
-.hero .hero-image img{
+#hero .hero-image img{
     width: 80vh;
 }
 
-.hero span{
+#hero h1{
     font-size: 5vh;
 }
 
-.about{
-    background-color: lightyellow;
+#about{
+    background-color: rgb(204, 204, 121);
     padding: 5vh 15vh ;
     display: flex;
     justify-content: center;
@@ -120,14 +123,14 @@
     height: 100vh;
 }
 
-.about .sec-title{
+.sec-title{
     font-size: 5vh;
     font-weight: 800;
     line-height: 3;
     color: #474306 ;
 }
 
-.about .sec-text{
+.sec-text{
     font-size: 4vh;
     line-height:2 ;
     font-weight: 540;
@@ -138,14 +141,27 @@
     color: rgba(0, 0, 255, 0.938);
 }
 
+#about .skills{
+    line-height: 2;
+}
+
+#about .skills img{
+    padding: 0 3vh;
+}
+
 .projects{
     display: grid;
-    background-color: lightyellow;
     grid-template-columns: 1fr 1fr 1fr;
     grid-gap: 10vh;
     place-items: center;
-    padding: 10vh;
 }
+
+#projects-container{
+    padding: 5vh 15vh;
+    background-color: lightyellow;
+    line-height: 2;
+}
+
 
 .projects .project-card{
     display: flex;
@@ -155,8 +171,7 @@
     background-color: #F5EE84;
     border-radius: 1vh;
     line-height: 2;
-    padding: 2vh;
-    
+    padding: 2vh;  
 }
 
 .project-card .project-title{
@@ -171,20 +186,107 @@
 
 .project-card .buttons{
     display: flex;
-    justify-content: space-evenly
+    justify-content: space-evenly;
+    margin-top: 2vh;
+    margin-bottom: 2vh;
 }
 
 .project-card .buttons button{
     width: 12vh;
     height: 4vh;
+    cursor: pointer;
     color: lightyellow;
     background-color:#03045E;
     border: none;
     border-radius: 1vh;
+    transition: ease;
+    transition-duration: 0.5s;
+}
+
+.project-card .buttons button:hover{
+    background-color: #0b0eb8;
+    scale: 1.05;
 }
 
 .project-card .icons{
     display: flex;
     justify-content: space-between;
+    margin-top:2vh;
 }
+
+#contacts{
+    padding: 5vh 15vh;
+    line-height: 2;
+    background-color: lightyellow;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#contacts #full-name, #email{
+    width: 30rem;
+    height: 2rem;
+}
+
+#contacts  #message{
+    width: 30rem;
+    height: 4rem;
+
+}
+
+#contacts input{
+    border-radius: 0.5rem;
+    border: 2px solid #474306;
+}
+
+#contacts button{
+    background-color: #F5EE84;
+    color: #474306;
+    width: 10vh;
+    height: 5vh;
+    border: none;
+    border-radius: 1vh;
+    font-size: medium;
+    font-weight: 550;
+    margin-top: 2vh;
+    cursor: pointer;
+}
+
+#contacts button:hover{
+    background-color:yellowgreen;
+}
+
+
+#footer{
+    background-color: rgb(204, 204, 121);
+    display: flex;
+    justify-content: space-between;
+    padding: 5vh;
+}
+
+#footer img{
+    width: 4vh;
+    padding: 1vh;
+    transition: ease;
+    transition-duration: 0.5s;
+    cursor: pointer;
+}
+
+#footer img:hover{
+    scale: 1.1;
+}
+
+#footer ul{
+    list-style: none;
+    font-size: larger;
+    font-weight: 550;
+}
+
+#footer ul a{
+    text-decoration: none;
+}
+
+
+
+
 

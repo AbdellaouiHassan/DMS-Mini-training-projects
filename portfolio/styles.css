@@ -115,10 +115,11 @@
 }
 
 #about{
-    background-color: rgb(204, 204, 121);
+    background-color: #F5EE84;
     padding: 5vh 15vh ;
     display: flex;
     justify-content: center;
+    align-items: center;
     flex-direction: column;
     height: 100vh;
 }
@@ -284,6 +285,11 @@
 
 #footer ul a{
     text-decoration: none;
+}
+
+#footer ul a:hover{
+    color: rgb(130, 130, 330);
+    text-decoration: underline;
 }
 
 

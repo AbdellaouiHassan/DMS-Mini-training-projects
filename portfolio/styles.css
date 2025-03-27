@@ -229,15 +229,18 @@
     height: 2rem;
 }
 
-#contacts  #message{
+#contacts  textarea{
     width: 30rem;
     height: 4rem;
 
 }
 
-#contacts input{
+#contacts input, textarea{
     border-radius: 0.5rem;
     border: 2px solid #474306;
+    font-weight: 500;
+    font-size: larger;
+    padding: 1rem;
 }
 
 #contacts button{

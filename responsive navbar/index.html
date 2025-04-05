@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="MobileNav" >
+        <ul >
+            <li onclick="HideMobileNav()" class="CloseBtn"><a><img src="close.png" width="80%"></a></li>
+            <li><a>Services</a></li>
+            <li><a>Projects</a></li>
+            <li><a>About</a></li>
+            <li><button>Contact</button></li>
+        </ul>
+    </nav>
+    <nav class="NavBar">
+        <h1>LOGOBAKERY</h1>
+        <ul class="DeskNav" >
+            <li><a>Services</a></li>
+            <li><a>Projects</a></li>
+            <li><a>About</a></li>
+            <li><button>Contact</button></li>
+            <li onclick="ShowMobileNav()" class="MenuBtn"><a><img src="menu.png" alt="" width="80%"></a></li>
+        </ul>
+    </nav> 
+    <script>
+        function ShowMobileNav (){
+            const show = document.querySelector('.MobileNav')
+            show.style.display = 'flex'
+        }
+
+        function HideMobileNav(){ 
+            const hide = document.querySelector ('.MobileNav')
+            hide.style.display = 'none'
+        }
+
+    </script>
+</body>
+</html>

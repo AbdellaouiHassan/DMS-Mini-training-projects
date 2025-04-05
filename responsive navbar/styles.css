@@ -1,0 +1,62 @@
+
+.NavBar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #8a2be2;
+    padding: 1em 1em ;
+    color: whitesmoke;
+}
+
+ ul{
+    display: flex;
+    gap: 1em;
+    list-style: none; 
+    align-items: center;
+    font-size: 1.1em;
+}
+
+ ul button{
+    background-color: gray;
+    border: none;
+    padding: 0.3em 1em;
+    border-radius: 0.5em;
+    color: whitesmoke;
+}
+
+.MobileNav{
+    display: none;
+    background-color: #8a2be2;
+    position: fixed;
+    top: 0;
+    right:  0;
+    height: 100vh;
+    width: 50vh;
+    margin-top: 1em;
+}
+
+.MobileNav ul {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 2em;
+}
+
+.MenuBtn{
+    display: none;
+}
+
+
+@media(max-width: 992px) {
+     html{
+        font-size: 14px;
+    }
+    .MenuBtn{
+        display: block;
+    }
+
+    .DeskNav{
+        display: none;
+    }
+
+}

@@ -1,0 +1,208 @@
+html{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.NavBar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:   0 2em ;
+    font-size: 1.3em;
+    height: 60px;
+}
+
+.NavBar__start ul{
+    display: flex;
+    list-style: none;
+    align-items: center;
+    gap: 2em;
+}
+
+.NavBar ul li a {
+    cursor: pointer;
+    text-decoration: none;
+    color: black;
+}
+
+.NavBar ul li a:hover{
+    text-decoration: underline;
+}
+
+.NavBar__end ul{
+display: flex;
+align-items: center;
+list-style: none;
+gap: 2em;
+}
+
+.NavBar__end button{
+    cursor: pointer;
+    color: white;
+    background-color: black;
+    border: none;
+    padding: 0.7em 1em ;
+    border-radius: 4px;
+    font-weight: 550;
+    transition: 0.5s ease;
+}
+
+.NavBar__end button:hover{
+    scale: 1.1;
+    background-color: rgb(165, 65, 65);
+}
+
+ul li a{
+    cursor: pointer;;
+}
+
+.hero{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero__text{
+    text-align: center;
+}
+
+.hero__text h1{
+    font-size: 3em;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.hero__text p{
+    font-size: 1.2em;
+    color: gray;
+}
+
+.hero__text button{
+    padding: 0.6em 2em;
+    background-color:darkgreen;
+    border-radius: 1em;
+    color: white;
+    font-size: 1.2em;
+    font-weight: 550;
+    border: 2px black solid;
+    transition: 0.5s ease;
+}
+
+.hero__text button:hover{
+    background-color: rgb(51, 177, 51);
+    scale: 1.1;
+}
+
+.hero__icons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10em;
+    text-align: center;
+}
+
+.hero__icons img{
+    display: inline-block;
+}
+
+.hero__icons p{
+    margin: 0;
+    color: gray;
+}
+
+.SellAnywhere__container{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.SellAnywhere__left{
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    padding-left: 16rem;
+}
+
+
+
+.SellAnywhere__right {
+    width: 40%;
+}
+
+.SellAnywhere{
+    position: relative;
+    
+}
+
+ #img{
+    position: absolute;
+    bottom: 5rem;
+    right: 1rem ;  
+}
+
+.left__icons{
+    margin: 4rem 0 ;
+    display: flex;
+    gap: 4rem;
+}
+
+.SellAnywhere__left h1{
+    font-size: 3em;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.SellAnywhere__left p{
+    font-size: 1.2em;
+    color: gray;
+}
+
+.SellAnywhere__left button{
+    align-self: flex-start;
+    padding: 0.5em 3em;
+    background-color: lightcoral;
+    border-radius: 1em;
+    color: darkred;
+    font-size: 1.2em;
+    font-weight: 550;
+    border: 2px darkred solid;
+    transition: 0.5s ease;
+}
+
+.SellAnywhere__left button:hover{
+    scale: 1.1;
+    background-color: rgb(226, 80, 80);
+}
+
+
+.SellAnywhere__buttom{
+    font-size: 1.2em;
+    line-height: 1.5;
+    background-color: lightcoral;
+    color: darkred;
+    border: 2px darkred solid;
+    border-radius: 2rem;
+    padding: 1em 5em ;
+    margin: 2rem 10rem  ;
+    
+}
+
+.buttom__buttom{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.buttom__buttom .start{
+    display: flex;
+    align-items: center;
+    gap: 1em;
+}
+
+.buttom__buttom p{
+    font-size: 1.2em;
+}
+
+.buttom__buttom .end{
+    display: flex;
+    align-items: center;
+    gap: 1em;
+}

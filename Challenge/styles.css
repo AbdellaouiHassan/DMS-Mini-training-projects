@@ -6,16 +6,82 @@ html{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding:   0 2em ;
-    font-size: 1.3em;
+    padding:   0 2rem ;
+    font-size: 1.3rem;
     height: 60px;
 }
+
+.mobile-nav{
+    display: none;
+    position: fixed;
+    z-index: 999;
+    justify-content: center;
+    align-items: center;
+    right: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: whitesmoke;
+    font-size: 1.3rem;
+} 
+
+ .menu-btn{
+    display: none;
+ }
+
+.mobile-nav img{
+    position: absolute;
+    top: 2%;
+    left: 2% ;
+}
+
+.mobile-nav ul{
+    list-style: none;
+    
+}
+
+.mobile-nav ul li{
+    margin-top: 0.5rem;
+    font-size: 3rem;
+    
+}
+
+.mobile-nav ul li a{
+    color: black;
+    text-decoration: none;
+    margin-top: 5rem;
+}
+
+.mobile-nav ul li a:hover{
+    text-decoration: underline;
+}
+
+.mobile-nav button{
+    cursor: pointer;
+    color: white;
+    background-color: black;
+    border: none;
+    padding: 0.7rem 1rem ;
+    border-radius: 4px;
+    font-weight: 500;
+    transition: 0.5s ease;
+    font-size: 2rem;
+}
+
+.mobile-nav button:hover{
+    scale: 1.1;
+    background-color: rgb(165, 65, 65);
+ }
+
+ .NavBar__start {
+    display: flex;
+ }
 
 .NavBar__start ul{
     display: flex;
     list-style: none;
     align-items: center;
-    gap: 2em;
+    gap: 2rem;
 }
 
 .NavBar ul li a {
@@ -28,11 +94,16 @@ html{
     text-decoration: underline;
 }
 
+.NavBar__end{
+    display: flex;
+    align-items: center;
+}
+
 .NavBar__end ul{
 display: flex;
 align-items: center;
 list-style: none;
-gap: 2em;
+gap: 2rem;
 }
 
 .NavBar__end button{
@@ -40,7 +111,7 @@ gap: 2em;
     color: white;
     background-color: black;
     border: none;
-    padding: 0.7em 1em ;
+    padding: 0.7rem 1rem ;
     border-radius: 4px;
     font-weight: 550;
     transition: 0.5s ease;
@@ -52,7 +123,7 @@ gap: 2em;
 }
 
 ul li a{
-    cursor: pointer;;
+    cursor: pointer;
 }
 
 .hero{
@@ -60,28 +131,33 @@ ul li a{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin-top: 5rem;
 }
+
+.hero__image img{
+    width: 100%;
+ }
 
 .hero__text{
     text-align: center;
 }
 
 .hero__text h1{
-    font-size: 3em;
+    font-size: 3rem;
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 .hero__text p{
-    font-size: 1.2em;
+    font-size: 1.2rem;
     color: gray;
 }
 
 .hero__text button{
-    padding: 0.6em 2em;
+    padding: 0.6rem 2rem;
     background-color:darkgreen;
     border-radius: 1em;
     color: white;
-    font-size: 1.2em;
+    font-size: 1.2rem;
     font-weight: 550;
     border: 2px black solid;
     transition: 0.5s ease;
@@ -96,12 +172,8 @@ ul li a{
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 10em;
+    gap: 5rem;
     text-align: center;
-}
-
-.hero__icons img{
-    display: inline-block;
 }
 
 .hero__icons p{
@@ -113,13 +185,13 @@ ul li a{
     display: flex;
     justify-content: flex-start;
     align-items: center;
+    margin: 5rem 10rem;
 }
 
 .SellAnywhere__left{
     width: 60%;
     display: flex;
     flex-direction: column;
-    padding-left: 16rem;
 }
 
 
@@ -146,22 +218,22 @@ ul li a{
 }
 
 .SellAnywhere__left h1{
-    font-size: 3em;
+    font-size: 3rem;
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 .SellAnywhere__left p{
-    font-size: 1.2em;
+    font-size: 1.2rem;
     color: gray;
 }
 
 .SellAnywhere__left button{
     align-self: flex-start;
-    padding: 0.5em 3em;
+    padding: 0.5rem 3rem;
     background-color: lightcoral;
-    border-radius: 1em;
+    border-radius: 1rem;
     color: darkred;
-    font-size: 1.2em;
+    font-size: 1.2rem;
     font-weight: 550;
     border: 2px darkred solid;
     transition: 0.5s ease;
@@ -174,14 +246,14 @@ ul li a{
 
 
 .SellAnywhere__buttom{
-    font-size: 1.2em;
+    font-size: 1.2rem;
     line-height: 1.5;
     background-color: lightcoral;
     color: darkred;
     border: 2px darkred solid;
     border-radius: 2rem;
-    padding: 1em 5em ;
-    margin: 2rem 10rem  ;
+    padding: 1rem 5rem ;
+    margin: auto 10dvw;
     
 }
 
@@ -194,15 +266,83 @@ ul li a{
 .buttom__buttom .start{
     display: flex;
     align-items: center;
-    gap: 1em;
+    gap: 1rem;
 }
 
 .buttom__buttom p{
-    font-size: 1.2em;
+    font-size: 1.2rem;
 }
 
 .buttom__buttom .end{
     display: flex;
     align-items: center;
-    gap: 1em;
+    gap: 1rem;
+}
+
+@media (max-width:1130px){
+    html{
+        font-size: 14px;
+    }  
+}
+
+@media (max-width:980px){
+    .HideOnMobile li a, .HideOnMobile li button {
+        display: none;
+    }
+
+    .menu-btn{
+        display: inline-block ;
+        margin-right: 2rem;
+    }
+
+    .SellAnywhere__container{
+        margin: 5rem 5rem;
+        justify-content: center;
+    }
+
+    .hero h1{
+        font-size: 2.5rem;
+    }
+
+    .SellAnywhere__left h1{
+        font-size: 2.5rem;
+    }
+
+    #img{
+        display: none;
+    } 
+
+    .hero__icons{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .buttom__buttom{
+        flex-direction: column;
+        align-items: space-between;
+    }
+
+    /* .buttom__buttom .start{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .buttom__buttom .end{
+        display: flex;
+        justify-content: space-between;
+    } */
+
+    .left__icons {
+        flex-direction: column;
+    }
+
+    .SellAnywhere__left button{
+        font-size: 1rem;
+    }
+}
+
+@media (max-width:700px){
+    html{
+        font-size: 12px;
+    }  
 }

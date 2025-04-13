@@ -1,0 +1,120 @@
+
+$x-large: 2rem;
+$large: 1.5rem;
+$medium: 1.125rem;
+$small: 0.75rem;
+$headings__color: darkgrey;
+$desc-color: black;
+
+@mixin headings {
+    color: $headings__color;
+    font-size: $x-large;
+}
+
+@mixin description {
+    color: $desc-color;
+    font-size: $medium;
+}
+
+@mixin img-sizing{
+    width: 50%;
+}
+
+@mixin card-styling{
+    width: 20vw;
+    border-radius: 0.5rem;
+    background-color: whitesmoke ;
+    padding: 2rem;
+}
+
+@mixin ul-styling  {
+    display: flex;
+    padding-left: 0;
+    list-style: none;
+    gap: 1rem;
+
+    li{
+        background-color: rgb(27, 27, 26);
+        padding:3px;
+        border-radius: 5%;
+        color: white;
+        font-size: $large;
+    }
+}
+
+@mixin btn-styling{
+    border: 0;
+    padding: 0.5rem 1rem;
+    background-color: greenyellow;
+    border-radius: 1rem;
+    font-size: $medium;
+    font-weight: 500;
+    text-align: center;
+}
+
+body{
+    background-color: brown;
+    // display: flex;
+    // justify-content: center;
+}
+
+
+.card-1 {
+    grid-column: 1/2;
+    grid-row: 2/3;
+    @include card-styling;
+    img{
+        @include img-sizing;
+    }
+    ul{
+       @include ul-styling;
+    }
+    button{
+        @include btn-styling;
+    }
+    p{
+        @include description;
+    }
+}
+
+top{
+    grid-column: 3/4;
+    grid-row: 1/2;
+}
+
+.card-2{
+    grid-column: 2/3;
+    grid-row: 2/3;
+    display: flex;
+    flex-direction: column;
+    gap: 0.1rem;
+    .card-content{
+        @include card-styling;
+        background-color: aqua;
+        ul {
+            @include ul-styling();
+        }
+        img{
+            @include img-sizing;
+        }
+        .card-2__btns{
+            button{
+                @include btn-styling;
+                background-color: brown;
+            }
+        }
+        p{
+            @include description;
+        }
+    } 
+}
+
+.container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 10rem 1fr 10rem;
+}
+
+
+
+

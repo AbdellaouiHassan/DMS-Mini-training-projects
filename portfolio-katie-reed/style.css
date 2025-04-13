@@ -4,13 +4,63 @@ body {
   padding: 0;
 }
 
+.mobile-nav {
+  display: none;
+  position: fixed;
+  z-index: 999;
+  justify-content: center;
+  align-items: center;
+  right: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background-color: white;
+  color: black;
+  font-size: 1.3rem;
+}
+.mobile-nav .close-btn {
+  cursor: pointer;
+  position: absolute;
+  top: 2%;
+  left: 2%;
+  font-size: 3rem;
+}
+.mobile-nav ul {
+  list-style: none;
+}
+.mobile-nav ul li {
+  margin-top: 0.5rem;
+  font-size: 3rem;
+}
+.mobile-nav ul li a {
+  text-decoration: none;
+  margin-top: 5rem;
+  color: black;
+  transition: 0.5s;
+}
+.mobile-nav ul li a:hover {
+  color: #1980a0;
+}
+.mobile-nav .mobile-icons {
+  text-align: center;
+  font-size: 2rem;
+}
+.mobile-nav .mobile-icons i {
+  padding-left: 2rem;
+  transition: 0.5s;
+}
+.mobile-nav .mobile-icons i:hover {
+  scale: 1.2;
+  color: #1877f2;
+}
+
 .NavBar {
   align-items: center;
   height: 8rem;
   padding: 1rem 4rem;
 }
 .NavBar .NavBar__start h1 {
-  font-size: 6rem;
+  font-size: clamp(24px, 5rem, 5vw);
   font-weight: 400;
 }
 .NavBar .NavBar__center {
@@ -26,21 +76,27 @@ body {
   text-decoration: none;
   font-size: 2rem;
   color: black;
-  padding: 3rem;
+  padding: 2rem;
   transition: 0.5s;
 }
 .NavBar .NavBar__center ul a:hover {
   color: #1980a0;
 }
-.NavBar .NavBar__end i {
-  padding-left: 1rem;
+.NavBar .NavBar__end .menu-btn {
+  display: none;
+  cursor: pointer;
+  font-size: 3rem;
+  color: black;
+}
+.NavBar .NavBar__end .nav-icons {
+  padding-right: 1rem;
   font-size: 2rem;
   transition: 0.5s;
   cursor: pointer;
 }
-.NavBar .NavBar__end i:hover {
+.NavBar .NavBar__end .nav-icons:hover {
   scale: 1.2;
-  color: rgb(21, 21, 128);
+  color: #1877f2;
 }
 
 .hero {
@@ -91,7 +147,7 @@ body {
   width: 100%;
 }
 .AboutMe .container .AboutMe__right h1 {
-  font-size: 3.5rem;
+  font-size: clamp(16px, 3.5rem, 3vw);
   font-weight: 600;
   text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
 }
@@ -101,7 +157,7 @@ body {
   gap: 2rem;
 }
 .AboutMe .container .AboutMe__left p {
-  font-size: 1.3rem;
+  font-size: clamp(10px, 1.3rem, 2vw);
   font-weight: 400;
   color: #969696;
 }
@@ -139,13 +195,13 @@ body {
   gap: 3rem;
 }
 .skills .container .skills__top h1 {
-  font-size: 3.5rem;
+  font-size: clamp(16px, 3.5rem, 3vw);
   font-weight: 600;
   text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
   text-shadow: none;
 }
 .skills .container .skills__top p {
-  font-size: 1.3rem;
+  font-size: clamp(10px, 1.3rem, 2vw);
   font-weight: 400;
 }
 .skills .container .skills__bottom {
@@ -161,7 +217,7 @@ body {
   align-items: center;
 }
 .skills .container .skills__bottom .bottom__left h3 {
-  font-size: 1.3rem;
+  font-size: clamp(10px, 1.3rem, 2vw);
   font-weight: 400;
   margin-top: 1.5rem;
   width: 50%;
@@ -186,16 +242,14 @@ body {
   background-color: white;
   height: 2.5rem;
 }
-.skills .container .skills__bottom .bottom__right .html .skill__left {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.skills .container .skills__bottom .bottom__right .html button {
   height: 100%;
-  width: 25%;
+  width: 30%;
+  border: none;
   background-color: #959188;
-}
-.skills .container .skills__bottom .bottom__right .html .skill__left h3 {
-  margin: 0;
+  font-size: clamp(8px, 1.5rem, 1.5vw);
+  color: white;
+  cursor: default;
 }
 .skills .container .skills__bottom .bottom__right .html .skill__right {
   height: 100%;
@@ -213,16 +267,14 @@ body {
   background-color: white;
   height: 2.5rem;
 }
-.skills .container .skills__bottom .bottom__right .css .skill__left {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.skills .container .skills__bottom .bottom__right .css button {
   height: 100%;
-  width: 25%;
+  width: 30%;
+  border: none;
   background-color: #959188;
-}
-.skills .container .skills__bottom .bottom__right .css .skill__left h3 {
-  margin: 0;
+  font-size: clamp(8px, 1.5rem, 1.5vw);
+  color: white;
+  cursor: default;
 }
 .skills .container .skills__bottom .bottom__right .css .skill__right {
   height: 100%;
@@ -240,16 +292,14 @@ body {
   background-color: white;
   height: 2.5rem;
 }
-.skills .container .skills__bottom .bottom__right .js .skill__left {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.skills .container .skills__bottom .bottom__right .js button {
   height: 100%;
-  width: 25%;
+  width: 30%;
+  border: none;
   background-color: #959188;
-}
-.skills .container .skills__bottom .bottom__right .js .skill__left h3 {
-  margin: 0;
+  font-size: clamp(8px, 1.5rem, 1.5vw);
+  color: white;
+  cursor: default;
 }
 .skills .container .skills__bottom .bottom__right .js .skill__right {
   height: 100%;
@@ -270,16 +320,14 @@ body {
   background-color: white;
   height: 2.5rem;
 }
-.skills .container .skills__bottom .bottom__right .react .skill__left {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.skills .container .skills__bottom .bottom__right .react button {
   height: 100%;
-  width: 25%;
+  width: 30%;
+  border: none;
   background-color: #959188;
-}
-.skills .container .skills__bottom .bottom__right .react .skill__left h3 {
-  margin: 0;
+  font-size: clamp(8px, 1.5rem, 1.5vw);
+  color: white;
+  cursor: default;
 }
 .skills .container .skills__bottom .bottom__right .react .skill__right {
   height: 100%;
@@ -300,16 +348,14 @@ body {
   background-color: white;
   height: 2.5rem;
 }
-.skills .container .skills__bottom .bottom__right .photoshop .skill__left {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.skills .container .skills__bottom .bottom__right .photoshop button {
   height: 100%;
-  width: 25%;
+  width: 30%;
+  border: none;
   background-color: #959188;
-}
-.skills .container .skills__bottom .bottom__right .photoshop .skill__left h3 {
-  margin: 0;
+  font-size: clamp(8px, 1.5rem, 1.5vw);
+  color: white;
+  cursor: default;
 }
 .skills .container .skills__bottom .bottom__right .photoshop .skill__right {
   height: 100%;
@@ -327,16 +373,14 @@ body {
   background-color: white;
   height: 2.5rem;
 }
-.skills .container .skills__bottom .bottom__right .adobe .skill__left {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.skills .container .skills__bottom .bottom__right .adobe button {
   height: 100%;
-  width: 25%;
+  width: 30%;
+  border: none;
   background-color: #959188;
-}
-.skills .container .skills__bottom .bottom__right .adobe .skill__left h3 {
-  margin: 0;
+  font-size: clamp(8px, 1.5rem, 1.5vw);
+  color: white;
+  cursor: default;
 }
 .skills .container .skills__bottom .bottom__right .adobe .skill__right {
   height: 100%;
@@ -357,16 +401,14 @@ body {
   background-color: white;
   height: 2.5rem;
 }
-.skills .container .skills__bottom .bottom__right .nodejs .skill__left {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.skills .container .skills__bottom .bottom__right .nodejs button {
   height: 100%;
-  width: 25%;
+  width: 30%;
+  border: none;
   background-color: #959188;
-}
-.skills .container .skills__bottom .bottom__right .nodejs .skill__left h3 {
-  margin: 0;
+  font-size: clamp(8px, 1.5rem, 1.5vw);
+  color: white;
+  cursor: default;
 }
 .skills .container .skills__bottom .bottom__right .nodejs .skill__right {
   height: 100%;
@@ -387,16 +429,14 @@ body {
   background-color: white;
   height: 2.5rem;
 }
-.skills .container .skills__bottom .bottom__right .wordpress .skill__left {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.skills .container .skills__bottom .bottom__right .wordpress button {
   height: 100%;
-  width: 25%;
+  width: 30%;
+  border: none;
   background-color: #959188;
-}
-.skills .container .skills__bottom .bottom__right .wordpress .skill__left h3 {
-  margin: 0;
+  font-size: clamp(8px, 1.5rem, 1.5vw);
+  color: white;
+  cursor: default;
 }
 .skills .container .skills__bottom .bottom__right .wordpress .skill__right {
   height: 100%;
@@ -416,7 +456,7 @@ body {
   padding: 6rem 4rem;
 }
 .portfolio .container h1 {
-  font-size: 3.5rem;
+  font-size: clamp(16px, 3.5rem, 3vw);
   font-weight: 600;
   text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
 }
@@ -424,7 +464,7 @@ body {
   padding: 4rem;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 40vh 40vh;
+  grid-template-rows: 40dvh 40dvh;
   grid-gap: 5rem;
 }
 .portfolio .container .portfolio__cards .web-design {
@@ -436,7 +476,7 @@ body {
   scale: 1;
 }
 .portfolio .container .portfolio__cards .web-design h3 {
-  font-size: 1.3rem;
+  font-size: clamp(10px, 1.3rem, 2vw);
   font-weight: 400;
 }
 .portfolio .container .portfolio__cards .web-design hr {
@@ -459,7 +499,7 @@ body {
   background-color: #404040;
 }
 .portfolio .container .portfolio__cards .mobile-design h3 {
-  font-size: 1.3rem;
+  font-size: clamp(10px, 1.3rem, 2vw);
   font-weight: 400;
 }
 .portfolio .container .portfolio__cards .mobile-design hr {
@@ -481,7 +521,7 @@ body {
   transition: 0.8s;
 }
 .portfolio .container .portfolio__cards .logo-design h3 {
-  font-size: 1.3rem;
+  font-size: clamp(10px, 1.3rem, 2vw);
   font-weight: 400;
 }
 .portfolio .container .portfolio__cards .logo-design hr {
@@ -504,7 +544,7 @@ body {
   background-color: #404040;
 }
 .portfolio .container .portfolio__cards .web-app h3 {
-  font-size: 1.3rem;
+  font-size: clamp(10px, 1.3rem, 2vw);
   font-weight: 400;
 }
 .portfolio .container .portfolio__cards .web-app hr {
@@ -526,7 +566,7 @@ body {
   transition: 0.8s;
 }
 .portfolio .container .portfolio__cards .mobile-app h3 {
-  font-size: 1.3rem;
+  font-size: clamp(10px, 1.3rem, 2vw);
   font-weight: 400;
 }
 .portfolio .container .portfolio__cards .mobile-app hr {
@@ -549,7 +589,7 @@ body {
   background-color: #404040;
 }
 .portfolio .container .portfolio__cards .pwa h3 {
-  font-size: 1.3rem;
+  font-size: clamp(10px, 1.3rem, 2vw);
   font-weight: 400;
 }
 .portfolio .container .portfolio__cards .pwa hr {
@@ -572,6 +612,7 @@ body {
 }
 .footer p {
   margin: 0;
+  font-size: 1.5rem;
 }
 .footer .footer__start .start__email {
   margin-top: 1rem;
@@ -600,10 +641,119 @@ body {
 .footer .footer__end .end__top i {
   padding-left: 1rem;
   transition: 0.5s;
-  font-size: large;
+  font-size: 2rem;
   cursor: pointer;
 }
 .footer .footer__end .end__top i:hover {
   scale: 1.2;
-  color: blue;
+  color: #1877f2;
+}
+
+@media (max-width: 1350px) {
+  html {
+    font-size: 15px;
+  }
+}
+@media (max-width: 1130px) {
+  html {
+    font-size: 14px;
+  }
+}
+@media (max-width: 990px) {
+  html {
+    font-size: 12px;
+  }
+  html .NavBar {
+    padding: 2rem 4rem;
+  }
+  html .NavBar .NavBar__start h1 {
+    font-size: 4rem;
+  }
+  html .NavBar .NavBar__center .HideOnMobile li a {
+    display: none;
+  }
+  html .NavBar .HideOnMobile .nav-icons {
+    display: none;
+  }
+  html .NavBar .NavBar__end .menu-btn {
+    display: inline;
+  }
+  html .portfolio .container .portfolio__cards {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 40dvh 40dvh 40dvh;
+  }
+  html .AboutMe .container {
+    flex-direction: column;
+    gap: 2rem;
+  }
+  html .AboutMe .container .AboutMe__right {
+    width: 100%;
+  }
+  html .AboutMe .container .AboutMe__right h1 {
+    text-align: center;
+  }
+  html .AboutMe .container .AboutMe__left button {
+    align-self: center;
+  }
+}
+@media (max-width: 770px) {
+  html {
+    font-size: 10px;
+  }
+  html .hero {
+    background-position: right;
+  }
+  html .hero .hero__text {
+    width: 100%;
+  }
+  html .skills .container .skills__top {
+    padding: 0rem;
+    width: 100%;
+  }
+  html .skills .container .skills__bottom {
+    flex-direction: column !important;
+    align-items: center;
+  }
+  html .skills .container .skills__bottom .bottom__left {
+    width: 100%;
+  }
+  html .skills .container .skills__bottom .bottom__left h3 {
+    text-align: center;
+  }
+  html .skills .container .skills__bottom .bottom__right {
+    display: flex;
+    width: 80%;
+  }
+  html .portfolio h1 {
+    text-align: center;
+  }
+  html .portfolio .container .portfolio__cards {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(6, 30dvh);
+  }
+  html .footer {
+    height: 20dvh;
+    padding: 1rem;
+  }
+  html .footer p {
+    margin: 0;
+    font-size: 1rem;
+  }
+  html .footer .footer__start .start__email {
+    margin-top: 0.5rem;
+    gap: 0.3rem;
+  }
+  html .footer .footer__start .start__phone-number {
+    gap: 0.3rem;
+  }
+  html .footer .footer__center button {
+    font-size: 1rem;
+  }
+  html .footer .footer__end {
+    gap: 0.5rem;
+  }
+  html .footer .footer__end .end__top i {
+    padding-left: 0.5rem;
+    font-size: 1rem;
+  }
 }/*# sourceMappingURL=style.css.map */

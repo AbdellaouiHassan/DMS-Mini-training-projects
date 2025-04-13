@@ -36,8 +36,7 @@ html{
 }
 
 .mobile-nav ul{
-    list-style: none;
-    
+    list-style: none;   
 }
 
 .mobile-nav ul li{
@@ -279,7 +278,7 @@ ul li a{
     gap: 1rem;
 }
 
-@media (max-width:1130px){
+@media (max-width:1200px){
     html{
         font-size: 14px;
     }  

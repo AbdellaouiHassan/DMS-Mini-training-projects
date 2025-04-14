@@ -42,7 +42,7 @@ $small: 0.75rem;
         display: flex;
         align-items: center;
         background-color: white;
-        height: 2.5rem;
+        height: 3rem;
         button{
             height: 100%;
             width: 30%;
@@ -99,7 +99,6 @@ $small: 0.75rem;
     color: black;
     font-size: 1.3rem;
     .close-btn{
-        cursor: pointer;
         position: absolute;
         top: 2%;
         left: 2% ;
@@ -124,9 +123,11 @@ $small: 0.75rem;
     }
 
     .mobile-icons{
+        cursor: pointer;
         text-align: center;
         font-size: 2rem;
         i{
+            
             padding-left: 2rem;
             transition: 0.5s;
         }
@@ -199,7 +200,7 @@ $small: 0.75rem;
 
 .hero{
     height: 100dvh;
-    width: 99dvw;
+    width: 100dvw;
     padding-top: 18dvh;
     background-image: url(Character.jpg);
     background-repeat: no-repeat;
@@ -285,7 +286,7 @@ $small: 0.75rem;
         flex-direction: column;
         gap: 3rem;
         .skills__top{
-            padding: 0 5rem;
+            padding: 0 1rem;
             display: flex;
             flex-direction: column;
             gap: 3rem;
@@ -459,7 +460,7 @@ $small: 0.75rem;
 
 .footer{
     height: 30dvh;
-    padding: 1rem 4rem;
+    padding: 1rem 5rem;
     background-color: #15120D;
     color: white;
     p{
@@ -588,7 +589,7 @@ $small: 0.75rem;
     html{
         font-size: 10px;
         .hero{
-            background-position: right;
+            background-position: bottom;
             .hero__text{
                 width: 100%;
             }

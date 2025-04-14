@@ -19,7 +19,6 @@ body {
   font-size: 1.3rem;
 }
 .mobile-nav .close-btn {
-  cursor: pointer;
   position: absolute;
   top: 2%;
   left: 2%;
@@ -42,6 +41,7 @@ body {
   color: #1980a0;
 }
 .mobile-nav .mobile-icons {
+  cursor: pointer;
   text-align: center;
   font-size: 2rem;
 }
@@ -101,7 +101,7 @@ body {
 
 .hero {
   height: 100dvh;
-  width: 99dvw;
+  width: 100dvw;
   padding-top: 18dvh;
   background-image: url(Character.jpg);
   background-repeat: no-repeat;
@@ -189,7 +189,7 @@ body {
   gap: 3rem;
 }
 .skills .container .skills__top {
-  padding: 0 5rem;
+  padding: 0 1rem;
   display: flex;
   flex-direction: column;
   gap: 3rem;
@@ -240,7 +240,7 @@ body {
   display: flex;
   align-items: center;
   background-color: white;
-  height: 2.5rem;
+  height: 3rem;
 }
 .skills .container .skills__bottom .bottom__right .html button {
   height: 100%;
@@ -265,7 +265,7 @@ body {
   display: flex;
   align-items: center;
   background-color: white;
-  height: 2.5rem;
+  height: 3rem;
 }
 .skills .container .skills__bottom .bottom__right .css button {
   height: 100%;
@@ -290,7 +290,7 @@ body {
   display: flex;
   align-items: center;
   background-color: white;
-  height: 2.5rem;
+  height: 3rem;
 }
 .skills .container .skills__bottom .bottom__right .js button {
   height: 100%;
@@ -318,7 +318,7 @@ body {
   display: flex;
   align-items: center;
   background-color: white;
-  height: 2.5rem;
+  height: 3rem;
 }
 .skills .container .skills__bottom .bottom__right .react button {
   height: 100%;
@@ -346,7 +346,7 @@ body {
   display: flex;
   align-items: center;
   background-color: white;
-  height: 2.5rem;
+  height: 3rem;
 }
 .skills .container .skills__bottom .bottom__right .photoshop button {
   height: 100%;
@@ -371,7 +371,7 @@ body {
   display: flex;
   align-items: center;
   background-color: white;
-  height: 2.5rem;
+  height: 3rem;
 }
 .skills .container .skills__bottom .bottom__right .adobe button {
   height: 100%;
@@ -399,7 +399,7 @@ body {
   display: flex;
   align-items: center;
   background-color: white;
-  height: 2.5rem;
+  height: 3rem;
 }
 .skills .container .skills__bottom .bottom__right .nodejs button {
   height: 100%;
@@ -427,7 +427,7 @@ body {
   display: flex;
   align-items: center;
   background-color: white;
-  height: 2.5rem;
+  height: 3rem;
 }
 .skills .container .skills__bottom .bottom__right .wordpress button {
   height: 100%;
@@ -606,7 +606,7 @@ body {
 
 .footer {
   height: 30dvh;
-  padding: 1rem 4rem;
+  padding: 1rem 5rem;
   background-color: #15120D;
   color: white;
 }
@@ -701,7 +701,7 @@ body {
     font-size: 10px;
   }
   html .hero {
-    background-position: right;
+    background-position: bottom;
   }
   html .hero .hero__text {
     width: 100%;

@@ -15,10 +15,10 @@
           </div>
           <div class="mobile-nav__list">  
               <ul class="list">
-                  <li><a href="#">Home</a></li>
-                  <li><a href="#">About</a></li>
-                  <li><a href="#">Projects</a></li>
-                  <li><a href="#">Contact</a></li>  
+                  <li><a href="#home" onclick="HideMobileNav()">Home</a></li>
+                  <li><a href="#about" onclick="HideMobileNav()">About</a></li>
+                  <li><a href="#projects" onclick="HideMobileNav()">Projects</a></li>
+                  <li><a href="#contact" onclick="HideMobileNav()">Contact</a></li>  
               </ul>
               <div class="mobile-icons">
                 <i class="fa-brands fa-linkedin"></i>
@@ -33,10 +33,10 @@
         </div>
         <div class="NavBar__center ">
           <ul class="HideOnMobile">
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">projects</a></li>
-            <li><a href="#">contact</a></li>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">projects</a></li>
+            <li><a href="#contact">contact</a></li>
           </ul>
         </div>
         <div class="NavBar__end HideOnMobile">
@@ -48,7 +48,7 @@
         
       </nav>
 
-      <section class="hero">
+      <section class="hero" id="home">
         <div class="container">
           <div class="hero__text">
             <h1>Katie Reed</h1>
@@ -57,7 +57,7 @@
           </div>
         </div>
       </section>
-      <section class="AboutMe">
+      <section class="AboutMe" id="about">
         <div class="container">
           <div class="AboutMe__right">
             <h1>About me</h1>
@@ -144,7 +144,7 @@
           </div>
         </div>
       </section>
-      <section class="portfolio">
+      <section class="portfolio" id="projects">
         <div class="container">
           <h1>Portfolio</h1>
           <div class="portfolio__cards">
@@ -173,7 +173,7 @@
           </div>
         </div> 
       </section>
-      <footer class="footer d-flex justify-content-between align-items-center">
+      <footer class="footer d-flex justify-content-between align-items-center" id="contact">
         <div class="footer__start">
           <h3>GET IN TOUCH</h3>
           <div class="start__email d-flex align-items-center">

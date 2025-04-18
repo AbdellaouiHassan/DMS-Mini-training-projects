@@ -178,6 +178,19 @@ input::-webkit-inner-spin-button {
     font-weight: 500;
 }
 
+@media (max-width: 1000px){
+    html{
+        font-size: 14px;
+    }
+    .container{
+        grid-template-columns: 1fr;
+        gap: 2rem ;
+    }
+
+    .sec-1{
+        padding:  0;
+    }
+}
 
 
 

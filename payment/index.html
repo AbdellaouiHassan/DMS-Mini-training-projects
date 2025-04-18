@@ -13,32 +13,34 @@
                 <div class="sec-1">
                     <h3>Bill</h3>
                     <div class="input-box">
-                        <input type="number" placeholder="0">
+                        <input type="number" placeholder="0" id="bill" onblur="storeBill()">
                         <h2 class="start">$</h2>
                     </div>
                     <h3>Select Tip %</h3>
                     <div class="tip">
-                        <button id="five" class="tip-btn">5%</button>
-                        <button id="ten" class="tip-btn">10%</button>
-                        <button id="fifteen" class="tip-btn">15%</button>
-                        <button id="fiftyfive" class="tip-btn">25%</button>
-                        <button id="fifty" class="tip-btn">50%</button>
+                        <button id="five" class="tip-btn" onclick="storeTipPercentage(0.05)">5%</button>
+                        <button id="ten" class="tip-btn" onclick="storeTipPercentage(0.1)">10%</button>
+                        <button id="fifteen" class="tip-btn" onclick="storeTipPercentage(0.15)">15%</button>
+                        <button id="fiftyfive" class="tip-btn"onclick="storeTipPercentage(0.25)">25%</button>
+                        <button id="fifty" class="tip-btn" onclick="storeTipPercentage(0.5)">50%</button>
                         <button id="custom"  >Custom</button>
                     </div>
                     <h3>Number of people</h3> 
                     <div class="input-box">
-                        <input type="number" placeholder="0">
+                        <input type="number" placeholder="0" id="n-of-people" onblur="tipPerPersonCalculator( bill, tip__percentage, number__of__people) ">
                         <img src="icon.png" class="start" id="icon">
                     </div>
                 </div> 
                 <section class="sec-2">
                     <div class="tip-amount">
+
                         <div class="text">
                             <h3>Tip amount</h3>
                             <p>/ person</p>
                         </div>
                         <div>
-                        <h2 class="to-pay">$ 0.00</h2>
+                
+                        <output class="to-pay"><script> onclick="document.write(tipPerPersonCalculator())"</script><output>
                         </div>
     
                     </div>
@@ -57,6 +59,40 @@
                     
                 </section>       
             </section>
+            <script>
+                var bill;
+                var tip__percentage; 
+                var number__of__people;
+
+                function storeBill(){
+                    bill = document.getElementById('bill').value;
+                    console.log(bill);
+                }
+
+                function storeTipPercentage(percentage){
+                    tip__percentage = percentage;
+                    console.log(tip__percentage);
+                }
+
+                function storeNumberOfPeople(){
+                    number__of__people = document.getElementById('n-of-people').value;
+                    console.log(number__of__people);
+                }
+
+                function tipPerPersonCalculator( bill, tip__percentage, number__of__people){
+                        let tip = bill * tip__percentage;
+                        let tip__per__person = tip / number__of__people;
+                        return ip__per__person;
+                    }
+
+                function totalPerPersonCalculator(bill, tip__percentage, number__of__people){
+                    let tip = bill * tip__percentage;
+                    let total = bill + tip;
+                    let total__per__person = total / number__of__people;
+                    console.log(total__per__person);
+                }
+
+            </script>
         </div>
 </body>
 </html>

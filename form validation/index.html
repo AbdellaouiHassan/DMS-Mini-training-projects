@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <form>
+            <div>
+                <label >First Name: <input type="text" id="f-name" onblur="checkFirstName()"><p id="f-name__alert"></p></label>
+                <label >Last Name: <input type="text" id="l-name" onblur="checkLastName()"><p id="l-name__alert"></p></label>
+            </div>
+            <div>
+                <label >Phone Number: <input type="text" id="phone-number" onblur="checkPhoneNumber()"><p id="phone-number__alert"></p></label>
+                <label >E-mail: <input type="email" id="email" onblur="checkEmail()"><p id="email__alert"></p></label>
+            </div>
+            <label >Message: <textarea id="msg" onblur="checkMessage()" ></textarea><p id="message__alert"></p></label>
+            <button type="submit">Submit</button>
+        </form>
+        <script>
+            function checkFirstName() {
+                var firstName = document.getElementById('f-name').value;  
+                var alertMessage = document.getElementById('f-name__alert');
+                if(firstName.length < 2){
+                    alertMessage.textContent = 'First Name is short';
+                }  
+                else if (firstName.length > 30){
+                    alertMessage.textContent = 'First Name is too long';
+                } 
+                else if(!isNaN(firstName)){
+                    alertMessage.textContent = "First Name can't be a number";
+
+                } 
+                else{
+                    alertMessage.textContent = "";
+                }
+            }
+
+            function checkLastName(){
+                var lastName = document.getElementById('l-name').value;
+                var alertMessage = document.getElementById('l-name__alert');
+                if(lastName.length < 2){
+                    alertMessage.textContent = 'Last Name is short';
+                }
+                else if (lastName.length > 30){
+                    alertMessage.textContent = 'Last Name is too long';
+                } 
+                else if(!isNaN(lastName)){
+                    alertMessage.textContent = "Last Name can't be a number";
+                }
+                else{
+                    alertMessage.textContent = "";
+                }
+            }
+
+            function checkPhoneNumber(){
+                var phoneNumber = document.getElementById('phone-number').value;
+                var alertMessage = document.getElementById('phone-number__alert');
+                if(isNaN(phoneNumber)){
+                    alertMessage.textContent = "Phone number must be a number";
+                }
+                else if(phoneNumber.length < 10 ){
+                    alertMessage.textContent = "Phone number is too short";
+                }
+                else if(phoneNumber.length > 20){
+                    alertMessage.textContent = "Phone number is too long";
+                }
+                else{
+                    alertMessage.textContent = "";
+                }
+            }
+
+            function checkEmail(){
+                var email = document.getElementById('email').value;
+                var alertMessage = document.getElementById('email__alert')
+                if(email.length < 7){
+                    alertMessage.textContent = "email is too short";
+                }
+                else if (!isNaN(email)){
+                    alertMessage.textContent = "email can't be a number";
+                }
+                else{
+                    alertMessage.textContent = ""
+                }
+            }
+
+            function checkMessage(){
+                var message = document.getElementById('msg').value;
+                var alertMessage = document.getElementById('message__alert');
+                if (message.length < 3){
+                    alertMessage.textContent ="Message must be valid, it must contain at least one word";
+                }
+                else if(message.length > 100){
+                    alertMessage.textContent = "message is too long";
+                }
+                else{
+                    alertMessage.textContent = "";
+                }
+
+            }
+        </script>
+    </div>
+</body>
+</html>

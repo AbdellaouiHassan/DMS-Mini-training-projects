@@ -58,8 +58,8 @@ $small: 0.75rem;
             .MasteringPercentage{
                 height: 100%;
                 width: 90%;
-                background-color: #ccc9c4;
-                border-right: 2px solid #bdbdba;
+                background-color: #dad8d4;
+                border-right: 1px solid #F1F1EF;
             }
         }
 }
@@ -200,7 +200,7 @@ $small: 0.75rem;
 
 .hero{
     height: 100dvh;
-    width: 100dvw;
+    width: 98dvw;
     padding-top: 18dvh;
     background-image: url(Character.jpg);
     background-repeat: no-repeat;
@@ -585,7 +585,7 @@ $small: 0.75rem;
     }
 }
 
-@media (max-width:770px){
+@media (max-width:750px){
     html{
         font-size: 10px;
         .hero{

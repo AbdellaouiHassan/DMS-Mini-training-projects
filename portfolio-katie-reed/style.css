@@ -101,7 +101,7 @@ body {
 
 .hero {
   height: 100dvh;
-  width: 100dvw;
+  width: 98dvw;
   padding-top: 18dvh;
   background-image: url(Character.jpg);
   background-repeat: no-repeat;
@@ -258,8 +258,8 @@ body {
 .skills .container .skills__bottom .bottom__right .html .skill__right .MasteringPercentage {
   height: 100%;
   width: 90%;
-  background-color: #ccc9c4;
-  border-right: 2px solid #bdbdba;
+  background-color: #dad8d4;
+  border-right: 1px solid #F1F1EF;
 }
 .skills .container .skills__bottom .bottom__right .css {
   display: flex;
@@ -283,8 +283,8 @@ body {
 .skills .container .skills__bottom .bottom__right .css .skill__right .MasteringPercentage {
   height: 100%;
   width: 90%;
-  background-color: #ccc9c4;
-  border-right: 2px solid #bdbdba;
+  background-color: #dad8d4;
+  border-right: 1px solid #F1F1EF;
 }
 .skills .container .skills__bottom .bottom__right .js {
   display: flex;
@@ -308,8 +308,8 @@ body {
 .skills .container .skills__bottom .bottom__right .js .skill__right .MasteringPercentage {
   height: 100%;
   width: 90%;
-  background-color: #ccc9c4;
-  border-right: 2px solid #bdbdba;
+  background-color: #dad8d4;
+  border-right: 1px solid #F1F1EF;
 }
 .skills .container .skills__bottom .bottom__right .js .skill__right .MasteringPercentage {
   width: 80%;
@@ -336,8 +336,8 @@ body {
 .skills .container .skills__bottom .bottom__right .react .skill__right .MasteringPercentage {
   height: 100%;
   width: 90%;
-  background-color: #ccc9c4;
-  border-right: 2px solid #bdbdba;
+  background-color: #dad8d4;
+  border-right: 1px solid #F1F1EF;
 }
 .skills .container .skills__bottom .bottom__right .react .skill__right .MasteringPercentage {
   width: 80%;
@@ -364,8 +364,8 @@ body {
 .skills .container .skills__bottom .bottom__right .photoshop .skill__right .MasteringPercentage {
   height: 100%;
   width: 90%;
-  background-color: #ccc9c4;
-  border-right: 2px solid #bdbdba;
+  background-color: #dad8d4;
+  border-right: 1px solid #F1F1EF;
 }
 .skills .container .skills__bottom .bottom__right .adobe {
   display: flex;
@@ -389,8 +389,8 @@ body {
 .skills .container .skills__bottom .bottom__right .adobe .skill__right .MasteringPercentage {
   height: 100%;
   width: 90%;
-  background-color: #ccc9c4;
-  border-right: 2px solid #bdbdba;
+  background-color: #dad8d4;
+  border-right: 1px solid #F1F1EF;
 }
 .skills .container .skills__bottom .bottom__right .adobe .skill__right .MasteringPercentage {
   width: 80%;
@@ -417,8 +417,8 @@ body {
 .skills .container .skills__bottom .bottom__right .nodejs .skill__right .MasteringPercentage {
   height: 100%;
   width: 90%;
-  background-color: #ccc9c4;
-  border-right: 2px solid #bdbdba;
+  background-color: #dad8d4;
+  border-right: 1px solid #F1F1EF;
 }
 .skills .container .skills__bottom .bottom__right .nodejs .skill__right .MasteringPercentage {
   width: 60%;
@@ -445,8 +445,8 @@ body {
 .skills .container .skills__bottom .bottom__right .wordpress .skill__right .MasteringPercentage {
   height: 100%;
   width: 90%;
-  background-color: #ccc9c4;
-  border-right: 2px solid #bdbdba;
+  background-color: #dad8d4;
+  border-right: 1px solid #F1F1EF;
 }
 .skills .container .skills__bottom .bottom__right .wordpress .skill__right .MasteringPercentage {
   width: 50%;
@@ -696,7 +696,7 @@ body {
     align-self: center;
   }
 }
-@media (max-width: 770px) {
+@media (max-width: 750px) {
   html {
     font-size: 10px;
   }

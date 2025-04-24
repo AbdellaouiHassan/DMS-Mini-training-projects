@@ -96,12 +96,16 @@ input::-webkit-inner-spin-button {
     border-radius: 0.3rem;
     font-size: larger;
     font-weight: 550;
-    transform: 1.5s;
+    transition: 0.5s;
 }
 
 .tip-btn:hover{
-    background-color: #04767c;
+    /* background-color: #04767c; */
     scale: 1.1;
+}
+
+.tip-btnSelected{
+    background-color: #12b851;
 }
 
 .tip #custom{
@@ -133,6 +137,11 @@ input::-webkit-inner-spin-button {
     font-family: 'Space Mono', monospace;
 }
 
+.display h1 {
+    font-size: 3rem;
+    color: #26C0AB;
+}
+
 .sec-2 .tip-amount{
     display: flex;
     justify-content: space-around;
@@ -159,7 +168,7 @@ input::-webkit-inner-spin-button {
     font-size: larger;
     font-weight: 600;
     color: #9bc3c7;
-    transform: 1.5s;
+    transition: 0.5s;
 }
 .reset-btn button:hover{
     background-color: #26797e;

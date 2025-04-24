@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div id="box">
+        </div>
+    </div>
+    <style>
+
+        .container{
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        #box{
+            top: 0px;
+            left: 0px;
+            position: absolute;
+            width: 50px;
+            height: 50px;
+            background-color: red;
+        }
+
+    </style>
+
+    <script>
+        var myBox = document.getElementById('box');
+        document.addEventListener('keydown', function(event) {
+                if (event.key == 'ArrowUp' ){
+                    let top = Number(myBox.style.top.replace("px", "") );
+                    top -= 10
+                    myBox.style.top = top + "px"; 
+                }
+                else if (event.key == 'ArrowDown' ){
+                    let top = Number(myBox.style.top.replace("px", "") );
+                    top += 10
+                    myBox.style.top = top + "px"; 
+                }
+                else if (event.key == 'ArrowRight' ){
+                    let left = Number(myBox.style.left.replace("px", ""));
+                    left += 10
+                    myBox.style.left = left + "px"; 
+                }
+                else if (event.key == 'ArrowLeft' ){
+                    let left = Number(myBox.style.left.replace("px", ""));
+                    left -= 10
+                    myBox.style.left = left + "px"; 
+                }
+        });
+    </script>
+</body>
+</html>

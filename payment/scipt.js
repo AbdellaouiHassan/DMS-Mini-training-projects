@@ -1,22 +1,47 @@
-// var bill = Number(prompt("How much is your bill? "));
-// var tip = Number(prompt("Enter the tip percentage? "));
-// var people = Number (prompt ("How many people are you? "));
-// var i = tipPerPersonCalculator(bill, tip, people);
-// var j = totalPerPersonCalculator(bill, tip, people);
-// console.log("Your tip / person is: " + i);
-// console.log("Your total / person is: " + j );
+var bill;
+                var tip__percentage; 
+                var number__of__people;
 
-function tipPerPersonCalculator( bill, tipPercentage, numberOfPeople){
-   let tip = bill * tipPercentage;
-   let tipPerPerson = tip / numberOfPeople;
-    return tipPerPerson;
-}
+                function storeBill(){
+                    bill = parseFloat(document.getElementById('bill').value);
+                    
+                }
 
-function totalPerPersonCalculator(bill, tipPercentage, numberOfPeople){
-    let tip = bill * tipPercentage;
-    let total = bill + tip;
-    let totalPerPerson = total / numberOfPeople;
-    return totalPerPerson;
-}
+                function storeTipPercentage(percentage){
+                    tip__percentage = percentage;
+                    
+                }
+
+                function storeNumberOfPeople(){
+                    number__of__people = parseFloat(document.getElementById('n-of-people').value);
+                }
+                
+                
+                document.getElementById("n-of-people").addEventListener( "blur", function( ){
+                        let tip = bill * tip__percentage;
+                        var tip__per__person = tip / number__of__people;
+                        document.getElementById("display-tip").textContent ="$"+ parseFloat(tip__per__person) ;
+                        let total = bill + tip;
+                        let total__per__person = total / number__of__people;
+                        document.getElementById("display-total").textContent ="$"+ parseFloat(total__per__person) ;
+                })
+
+
+                document.getElementById("reset-btn").addEventListener( "click", function(){
+                    document.getElementById("display-tip").textContent ="$0.00";
+                    document.getElementById("display-total").textContent ="$0.00";
+                    document.getElementById('n-of-people').value = "";
+                    document.getElementById('bill').value = "";
+                    for ( x of document.getElementById("tip").children){
+                        x.classList.remove("tip-btnSelected");
+                    }
+
+
+                })
+
+                document.getElementById("tip").addEventListener("click", function(e){
+                    const clicked = e.target;
+                    clicked.classList.toggle("tip-btnSelected")
+                })
 
 

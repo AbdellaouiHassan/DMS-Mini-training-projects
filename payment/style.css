@@ -1,3 +1,7 @@
+*{
+    box-sizing: border-box;
+}
+
 .big-container{
     display: flex;
     align-items: center;
